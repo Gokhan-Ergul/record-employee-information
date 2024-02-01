@@ -462,7 +462,7 @@ public class Javafx extends Application {
 						if (!tfLastName.getText().isEmpty())
 							((SalariedEmployee) employees.get(i)).setLastname(tfLastName.getText());
 
-						if (!tfWeekly.getText().isEmpty()) {
+						if (!tfWeekly.getText().isEmpty()) 
 							((SalariedEmployee) employees.get(i))
 									.setweeklySalary(Double.parseDouble(tfWeekly.getText()));
 
@@ -518,12 +518,15 @@ public class Javafx extends Application {
 
 						}
 						employeetoFile(fileTxt, employees);
-					}
-				} else {
+						}
+				}
+		}
+			
+			else {
 					showWarning("There is no employee in the records");
 				}
-			}
-		}
+			
+		
 		// writetoFile(strSourceArray);
 		btClear.fire();
 	}
